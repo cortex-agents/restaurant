@@ -1,10 +1,7 @@
-/*-----------------------------------*\
-  #index.css
-\*-----------------------------------*/
+
 
 /**
- * copyright 2022 codewithsadee
- */
+
 
 
 
@@ -2140,4 +2137,127 @@ textarea.input-field {
     left: 0;
   }
 
+}
+
+/*-----------------------------------*\
+  #CHEFS
+\*-----------------------------------*/
+
+.chefs .chef-card {
+  background-color: var(--smoky-black-2);
+  padding: 20px;
+  text-align: center;
+}
+
+.chefs .chef-card .card-banner {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin-inline: auto;
+  margin-block-end: 20px;
+}
+
+.chefs .chef-card .title-3 {
+  color: var(--gold-crayola);
+}
+
+.chefs .chef-card .label-2 {
+  margin-block: 5px 10px;
+}
+
+/*-----------------------------------*\
+  #CONTACT
+\*-----------------------------------*/
+
+.contact-wrapper {
+  display: grid;
+  gap: 40px;
+  margin-block-end: 40px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.contact-item .icon {
+  font-size: 2.5rem;
+  color: var(--gold-crayola);
+}
+
+.contact-item .title-3 {
+  color: var(--gold-crayola);
+  margin-block-end: 5px;
+}
+
+.map-wrapper {
+  border-radius: var(--radius-24);
+  overflow: hidden;
+}
+
+@media (min-width: 992px) {
+  .contact-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.reservation-page {
+  padding-top: 150px;
+}
+
+.reservation-page .reservation-form {
+  margin-block-start: 0;
+}
+
+.menu-card-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+@media (max-width: 575px) {
+  .about .abs-img-2 {
+    top: 20px; /* Push it down */
+    right: 20px; /* Keep it within bounds */
+  }
+}
+
+
+/*-----------------------------------*\
+  #ABOUT-DETAILED
+\*-----------------------------------*/
+
+.about-detailed {
+  background-color: var(--smoky-black-1);
+}
+
+.about-detailed .container {
+  display: grid;
+  gap: 20px;
+  align-items: center;
+}
+
+.about-detailed-banner {
+  width: 100%;
+}
+
+.about-detailed-content .section-title {
+  margin-block-end: 30px;
+}
+
+.about-detailed-item {
+  margin-block-end: 20px;
+}
+
+.about-detailed-item .title-3 {
+  color: var(--gold-crayola);
+  margin-block-end: 10px;
+}
+
+@media (min-width: 992px) {
+  .about-detailed .container {
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+  }
 }
